@@ -23,32 +23,37 @@ def run():
 
     n_elementos = int(input("Cantidad de elementos: "))
     lista_n = []
-    count = 0
-    rep = []
 
-    for n in range(n_elementos):
-        elementos_en_lista = int(float(input(f'Escribe los números que integran la lista de {n_elementos} elementos: ')))
+    for i in range(n_elementos):
+        elementos_en_lista = int(float(input(f'Ingresa los números: ')))
         lista_n.append(elementos_en_lista)
-        
-    print(f' La Lista tiene {n_elementos} números.')
-    print(lista_n)   
-
-list_repe = []
-
-def check_dup(lista_n):
-
-    for elem in lista_n:
-        if lista_n.count(elem) > 1:
-            list_repe.append(elem)
-            return True
-        return False
-    
-    result = check_dup(lista_n)
-
-    if result:
-        print("La lista tiene duplicados")
+        n_max = (max(set(lista_n), key = lista_n.count))
+    if n_max and n_max > 2:
+        print(f'El número que más se repite es: {n_max}')
+    elif n_max and n_max == 1:
+        print(f'Todos los elementos son únicos en la lista')
     else:
-        print("No hay duplicados")
+        print(f'El número que más se repite es: {n_max}')
+    print(f' La Lista tiene {n_elementos} números.')
+    print(f' elementos que componen la lista: {lista_n}')   
+    # print(lista_n.count)
+
+# list_repe = []
+
+# def check_dup(lista_n):
+
+    # for elem in lista_n:
+    #     if lista_n.count(elem) > 1:
+    #         list_repe.append(elem)
+    #         return True
+    #     return False
+    
+    # result = check_dup(lista_n)
+
+    # if result:
+    #     print("La lista tiene duplicados")
+    # else:
+    #     print("No hay duplicados")
 
 
     # for i in range(len(lista_n)):
@@ -64,7 +69,6 @@ def check_dup(lista_n):
 
 if __name__ == "__main__":
     run()
-    check_dup()
 
 
 
