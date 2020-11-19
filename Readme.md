@@ -39,7 +39,7 @@ Welcome to this repository where you will find different examples of challenges 
 
 You can access each of the challenges to be able to solve them yourself if you are learning to program or you can also review them and propose improvements to the problems presented.
 
-Many of the challenges I took from different pages including the #Reprogramming from Platzi.com or some exercises from hektorprofe.net. I also took the projects from the book "Python crash course: a hands-on, project-based introduction to programming / by Eric Matthes." and many other sources that I find on the way.
+Many of the challenges I took from different pages including the #Retodeprogramacion from Platzi.com or some exercises from hektorprofe.net. I also took the projects from the book "Python crash course: a hands-on, project-based introduction to programming / by Eric Matthes." and many other sources that I find on the way.
 
 In general, I will try to cite the source of the exercise in each of the files.
 
