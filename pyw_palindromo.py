@@ -51,3 +51,16 @@ if __name__ == "__main__":
     sentencia = input("Escribe una frase: ")
     es_palindromo = palindromo(sentencia)
     print(es_palindromo)
+
+
+# Resultado de Pywombat
+
+# def palindromo(sentencia):
+
+#     longitud = len(sentencia)
+#     for pos in range(0, longitud // 2):
+
+#         if sentencia[pos] != sentencia[  ((pos - longitud) * - 1) - 1 ]:
+#             return False
+
+#     return True
