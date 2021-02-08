@@ -11,6 +11,11 @@ def divisor(user_number):
     
     print(divisors)
 
+def new_divisor(user_number):
+    
+    print([x for x in range(1, user_number + 1) if user_number % x == 0])
+
 if __name__ == '__main__':
     user_number = int(input(f'Enter a number:' ))
     divisor(user_number)
+    new_divisor(int(input('Enter a new number: ')))

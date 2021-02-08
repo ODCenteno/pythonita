@@ -29,6 +29,10 @@ def random_lists():
 
     return random_a, random_b
                 
+def using_comprehensions(get_random_list):
+    
+    common_elements = list(set(x for x in get_random_list[0] if x in get_random_list[1]))
+    print(f'list of common elements from random lists using comprehensios: {sorted(common_elements)}')
 
 if __name__ == '__main__':
     a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
@@ -37,5 +41,6 @@ if __name__ == '__main__':
     list_overlap(a, b)
     get_random_list = random_lists()
     list_overlap(get_random_list[0], get_random_list[1])
+    using_comprehensions(get_random_list)
 
     
